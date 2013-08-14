@@ -53,7 +53,7 @@ else if($tfl_answer==$correct_answer) {
   echo "100|success|<p><strong>100 points</strong> That's correct!</p>";
 } 
 else {
-  $d = distance($point_lat,$point_lon,$answer_lat,$answer_lon) * 100; #meters
+  $d = distance($point_lat,$point_lon,$answer_lat,$answer_lon) * 200; #meters
 
   if($d <= 300) {
     $score = round(100/pow($d,0.05));
